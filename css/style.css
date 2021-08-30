@@ -1,0 +1,278 @@
+/*font-family: 'Montserrat', sans-serif;*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+html {
+    height: 100%;
+}
+ 
+body {
+	display: flex;
+   flex-direction: column;
+	
+	margin: 0px;
+   height: 100%;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+   font-size: 16px;
+}
+
+.active {
+	background-color: #1abc9c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+   color: #fff;
+	text-transform: uppercase;
+}
+
+::selection {
+	background: #16a085;
+   color: #a4003a;
+}
+
+/*header*/
+
+.index {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	min-height: 650px;
+	width: 100%;
+	background: url(../img/back.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+
+.index h1 {
+	margin: 20px 0px 10px;
+	padding-top: 10px;
+   padding-bottom: 20px;
+   letter-spacing: 4px;
+   font-size: 80px;
+}
+
+.index h4 {
+	margin: 10px 0px 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 1140px;
+}
+
+.navbar {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	max-height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+	float: left;
+   padding: 15px 15px 15px 0px;
+	
+	font-weight: 700;
+   font-size: 18px;
+   line-height: 20px;
+	color: #1abc9c;
+	text-decoration: inherit;
+	text-transform: uppercase;
+}
+.menu {
+	float: right;
+	display: flex;
+	list-style: none;
+}
+.menu .menu-link {
+	padding: 15px 15px;
+	
+	text-decoration: none;
+	line-height: 20px;
+	color: #fff;
+}
+
+.menu .menu-link:hover {
+	background-color: #1abc9c;
+}
+
+.menu .menu-link:active {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-header {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	min-height: 650px;
+	width: 100%;
+	background: url(../img/contact.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+
+.contact-header h1 {
+	margin: 20px 0px 10px;
+	padding-top: 10px;
+   padding-bottom: 20px;
+   letter-spacing: 4px;
+   font-size: 80px;
+}
+
+.contact-header h4 {
+	margin: 10px 0px 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+/*Portfolio*/
+
+main {
+	flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 60px 0px;
+}
+main h1 {
+	margin: 0px;
+	padding: 20px 0px 40px 0px;
+	min-height: 40px;
+	
+	font-size: 36px;
+	font-weight: 700;
+   color: #4a4a4a;
+	text-transform: capitalize;
+}
+
+.my-work {
+	display: grid;
+	grid-template-columns: repeat(3, 360px);
+	grid-template-rows: repeat(2, 240px);
+	grid-auto-flow: column;
+	height: 100%;
+	grid-gap: 25px;
+}
+
+.my-work-item {
+	opacity: 1;
+	display: grid;
+	background-color: aqua;
+	
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.inactive {
+	opacity: 0.5;
+	box-shadow: none;
+}
+
+.my-work-item:hover {
+	opacity: 0.5;
+	box-shadow: none;
+}
+
+.my-work-item:active {
+	opacity: 0.65;
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.item1 {
+	background: url(../img/portfolio/Organaisation.png) no-repeat center;
+	background-size: cover;
+}
+.item2 {
+	background: url(../img/portfolio/folio02.png) no-repeat center;
+	background-size: cover;
+}
+.item3 {
+	background: url(../img/portfolio/Interior.png) no-repeat center;
+	background-size: cover;
+}
+.item4 {
+	background: url(../img/portfolio/Auto.jpg) no-repeat center;
+	background-size: cover;
+}
+.item5 {
+	background: url(../img/portfolio/folio05.png) no-repeat center;
+	background-size: cover;
+}
+.item6 {
+	background: url(../img/portfolio/folio06.png) no-repeat center;
+	background-size: cover;
+}
+
+.about-text {
+	margin: auto;
+	margin-bottom: 10px;
+	width: 750px;
+	
+	color: #333
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 750px;
+}
+
+.form-item {
+	margin: 5px; 
+	padding: 10px 12px;
+	font-size: 14px;
+   height: auto;
+	
+	color: #555;
+	border: 1px solid #ccc;
+	
+	box-sizing: border-box;
+}
+
+.form-textarea {
+	min-height: 122px;
+}
+
+.form-button {
+	margin: 20px auto 0;
+	padding: 14px 40px;
+	width: 190px;
+	height: 50px;
+	background: #1abc9c;
+   border: 0;
+	border-radius: 4px;
+   color: #fff;
+   font-size: 16px;
+   transition: .5s;
+   cursor: pointer;
+}
+.form-button:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.form-button:active {
+	opacity: 0.5;
+	box-shadow: none;
+}
+
+/*footer*/
+
+footer {
+	flex-shrink: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;	
+	height: 90px;
+	background-color: #222222;
+}
+footer p {
+	min-height: 22px;
+	color: #fff;
+}
